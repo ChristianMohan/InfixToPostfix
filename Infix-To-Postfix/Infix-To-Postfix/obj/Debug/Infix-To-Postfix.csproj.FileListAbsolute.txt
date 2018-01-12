@@ -1,0 +1,6 @@
+C:\Users\eahscs\Documents\GitHub\InfixToPostfix\Infix-To-Postfix\Infix-To-Postfix\obj\Debug\Infix-To-Postfix.csprojResolveAssemblyReference.cache
+C:\Users\eahscs\Documents\GitHub\InfixToPostfix\Infix-To-Postfix\Infix-To-Postfix\bin\Debug\Infix-To-Postfix.exe.config
+C:\Users\eahscs\Documents\GitHub\InfixToPostfix\Infix-To-Postfix\Infix-To-Postfix\bin\Debug\Infix-To-Postfix.exe
+C:\Users\eahscs\Documents\GitHub\InfixToPostfix\Infix-To-Postfix\Infix-To-Postfix\bin\Debug\Infix-To-Postfix.pdb
+C:\Users\eahscs\Documents\GitHub\InfixToPostfix\Infix-To-Postfix\Infix-To-Postfix\obj\Debug\Infix-To-Postfix.exe
+C:\Users\eahscs\Documents\GitHub\InfixToPostfix\Infix-To-Postfix\Infix-To-Postfix\obj\Debug\Infix-To-Postfix.pdb
