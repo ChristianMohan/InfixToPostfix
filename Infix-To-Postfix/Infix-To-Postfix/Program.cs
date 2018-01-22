@@ -14,9 +14,9 @@ namespace Infix_To_Postfix
             // Use whatever you need from below...
 
             Console.WriteLine("enter an expression:");
-
-            String xp = Console.ReadLine();
-
+            String post = "";
+            String xp = Console.ReadLine().Replace(" ", "");
+            
             Stack st = new Stack();
             String[] letters = new String[xp.Length];
             for( int i = 0; i < xp.Length; i++)
@@ -24,14 +24,62 @@ namespace Infix_To_Postfix
                 letters[i] = xp.Substring(i, 1);
             }
 
-            foreach(String c in letters)
+            foreach(String t in letters)
             {
-                if(c == )
-            }
-            foreach(char c in xp)
-            {
+                
+                if(t != "+" && t != "-" && t != "x" && t != "/")
+                {
+                    post = post + t;
+                   
+                }
+
+                else if(t == "(")
+                {
+                    while(t != ")")
+                        {
+                        st.Pop();
+                    }
+                }
+                else
+                {
+                    bool x = false;
+                    object op = st.Peek();
+                    if (t == "*" && op == "+")
+                    {
+                        x = true;
+                    }
+                    if (t == "*" && op == "-")
+                    {
+                        x = true;
+                    }
+                    if (t == "/" && op == "+")
+                    {
+                        x = true;
+                    }
+                    if (t == "/" && op == "-")
+                    {
+                        x = true;
+                    }
+                    
+
+                    while (x != false || t != "(" || st.Count != 0)
+                    {
+                        st.Pop();
+                        post = post + t;
+                    }
+                    st.Push(t);
+                    Console.WriteLine(st.Peek());
+                }
+
 
             }
+            while (st.Count != 0)
+            {
+                st.Pop();
+            }
+            Console.WriteLine(post);
+            
+
             /*/
             st.Push('A');
             st.Push('M');
@@ -69,5 +117,6 @@ namespace Infix_To_Postfix
             }
             /*/
         }
+        
     }
 }
